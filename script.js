@@ -12,6 +12,7 @@ function addToCart(name, price, image){
     });
 
     localStorage.setItem("cart", JSON.stringify(cart));
+    updateCounts();
 
     alert(name + " added to cart");
 }
