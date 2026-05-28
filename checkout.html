@@ -77,6 +77,79 @@
 
 </section>
 
+
+<script>
+
+let form = document.getElementById("checkoutForm");
+
+form.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    let name =
+    document.getElementById("name").value.trim();
+
+    let email =
+    document.getElementById("email").value.trim();
+
+    let phone =
+    document.getElementById("phone").value.trim();
+
+    let address =
+    document.getElementById("address").value.trim();
+
+    let payment =
+    document.getElementById("payment").value;
+
+    /* VALIDATION */
+
+    if(name === ""){
+        alert("Please enter your name");
+        return;
+    }
+
+    if(email === ""){
+        alert("Please enter email");
+        return;
+    }
+
+    if(!email.includes("@")){
+        alert("Invalid email");
+        return;
+    }
+
+    if(phone === ""){
+        alert("Please enter phone number");
+        return;
+    }
+
+    if(phone.length < 10){
+        alert("Phone number must be 10 digits");
+        return;
+    }
+
+    if(address === ""){
+        alert("Please enter address");
+        return;
+    }
+
+    if(payment === ""){
+        alert("Please select payment method");
+        return;
+    }
+
+    /* SUCCESS */
+
+    alert("Order Placed Successfully");
+
+    window.location.href = "confirm.html";
+
+});
+
+</script>
+
+
+
 </body>
 </html>
 
