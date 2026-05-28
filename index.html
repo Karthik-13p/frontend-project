@@ -1,0 +1,309 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <h1>ShopEasy</h1>
+        </div>
+
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="search" placeholder="Search Products">
+        </div>
+
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="#home">Home</a></li>
+                <li><a href="#product">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+        
+<div class="icons">
+
+    <a href="cart.html" class="cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span>0</span>
+    </a>
+
+    <a href="wishlist.html" class="wishlist">
+        <i class="fa-solid fa-heart"></i>
+        <span>0</span>
+    </a>
+
+</div>
+
+
+
+    </header>
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h2>Welcome to ShopEasy</h2>
+
+            <p>
+                Best Online Shopping Website for Fashion,
+                Electronics & Accessories
+            </p>
+
+            <button><a href="#product" style="text-decoration: none; color: black;" >Shop Now</a></button>
+
+        </div>
+
+    </section>
+
+    <section class="product-section" id="product">
+
+        <div class="title">
+            <h2>Our Products</h2>
+        </div>
+
+        <div class="grid">
+
+            <div class="card">
+
+                <img src="Mens Watch Chronograph.jpeg">
+
+                <h3>Watch</h3>
+
+                <p>₹3000</p>
+
+                <button class="cart-btn"
+                onclick="addToCart('Watch',3000,
+                'Mens Watch Chronograph.jpeg')">
+                Add To Cart
+                </button>
+
+                <button class="wish-btn"
+                onclick="addToWishlist('Watch',3000,'Mens Watch Chronograph.jpeg')">
+                Add To Wishlist
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <img src="MENS BLOCK CLR SNEAKERS.jpeg">
+
+                <h3>Sneakers</h3>
+
+                <p>₹5000</p>
+
+                <button class="cart-btn"
+                onclick="addToCart('sneakers',5000,
+                'MENS BLOCK CLR SNEAKERS.jpeg')">
+                Add To Cart
+                </button>
+
+                <button class="wish-btn"
+                onclick="addToWishlist('sneakers',5000,'MENS BLOCK CLR SNEAKERS.jpeg')">
+                Add To Wishlist
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <img src="iPhone 17 Air – Elegância, leveza e tecnologia….jpeg">
+
+                <h3>iPhone</h3>
+
+                <p>₹120000</p>
+
+                <button class="cart-btn"
+                onclick="addToCart('iphone',120000,'iPhone 17 Air – Elegância, leveza e tecnologia….jpeg')">
+                Add To Cart
+                </button>
+
+                <button class="wish-btn"
+                onclick="addToWishlist('iphone',120000,'iPhone 17 Air – Elegância, leveza e tecnologia….jpeg')">
+                Add To Wishlist
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <img src="792633603204289858.jpeg">
+
+                <h3>Samsung S24 Ultra</h3>
+
+                <p>₹100000</p>
+
+                <button class="cart-btn"
+                onclick="addToCart('Samsung S24 Ultra',100000,'792633603204289858.jpeg')">
+                Add To Cart
+                </button>
+
+                <button class="wish-btn"
+                onclick="addToWishlist('Samsung S24 Ultra',100000,'792633603204289858.jpeg')">
+                Add To Wishlist
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <img src="Comfy and lightweight material, it is breathable….jpeg">
+
+                <h3>Hoodie</h3>
+
+                <p>₹1000</p>
+                <button class="cart-btn"
+                onclick="addToCart('Hoodie',1000,'Comfy and lightweight material, it is breathable….jpeg')">
+                Add To Cart
+                </button>
+
+                <button class="wish-btn"
+                onclick="addToWishlist('Hoodie',1000,'Comfy and lightweight material, it is breathable….jpeg')">
+                Add To Wishlist
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <img src="Upgrade your casual wardrobe with men’s oversized….jpeg">
+
+                <h3>T-Shirt</h3>
+
+                <p>₹500</p>
+
+                <button class="cart-btn"
+                onclick="addToCart('T-Shirt',500,'Upgrade your casual wardrobe with men’s oversized….jpeg')">
+                Add To Cart
+                </button>
+
+                <button class="wish-btn"
+                onclick="addToWishlist('T-Shirt',500,'Upgrade your casual wardrobe with men’s oversized….jpeg')">
+                Add To Wishlist
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <img src="Compartilhando esta imagem impressionante com….jpeg">
+
+                <h3>Smart TV</h3>
+
+                <p>₹50000</p>
+
+               <button class="cart-btn"
+                onclick="addToCart('Smart TV',50000,'Compartilhando esta imagem impressionante com….jpeg')">
+                Add To Cart
+                </button>
+
+                <button class="wish-btn"
+                onclick="addToWishlist('Smart TV',50000,'Compartilhando esta imagem impressionante com….jpeg')">
+                Add To Wishlist
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <img src="Air Conditioning HVAC Control System Ventilation Refrigeration PNG.jpeg">
+
+                <h3>Air Conditioner</h3>
+
+                <p>₹30000</p>
+
+                <button class="cart-btn"
+                onclick="addToCart('Air Conditioner',30000,'Air Conditioning HVAC Control System Ventilation Refrigeration PNG.jpeg')">
+                Add To Cart
+                </button>
+
+                <button class="wish-btn"
+                onclick="addToWishlist('Air Conditioner',30000,'Air Conditioning HVAC Control System Ventilation Refrigeration PNG.jpeg')">
+                Add To Wishlist
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+<section class="about" id="about">
+
+    <div class="about-content">
+
+        <h2>About Us</h2>
+
+        <p>
+            Welcome to ShopEasy, your one-stop online shopping destination.
+            We provide the best quality products including electronics,
+            fashion, accessories, home appliances and much more at affordable prices.
+        </p>
+
+        <p>
+            Our mission is to make online shopping simple, fast and secure
+            for everyone. We focus on customer satisfaction and modern shopping experience.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="contact" id="contact">
+
+    <div class="contact-container">
+
+        <h2>Contact Us</h2>
+
+        <form>
+
+            <input type="text" placeholder="Enter Your Name">
+
+            <input type="email" placeholder="Enter Your Email">
+
+            <input type="text" placeholder="Enter Subject">
+
+            <textarea rows="6" placeholder="Enter Your Message"></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+    <footer>
+
+        <h2>ShopEasy</h2>
+
+        <p>© 2026 All Rights Reserved</p>
+
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
